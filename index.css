@@ -27,9 +27,9 @@ body {
 #clock::before {
     content: '';
     position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: white;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 247, 255);
     border-radius: 50%;
     z-index: 10000;
 }
@@ -76,7 +76,7 @@ body {
     width: 4px;
     height: 90px;
     z-index: 11;
-    background-color: white;
+    background-color: rgb(72, 255, 0);
     border-radius: 6px 6px 0 0;
 }
 
@@ -102,5 +102,44 @@ body {
     #clock {
         height: 160px;
         width: 160px;
+        box-shadow: 0 -2px 20px rgb(0, 238, 255), 
+        0 2px 20px rgb(0, 238, 255),
+        inset 0 -5px 15px rgba(0, 238, 255, 0.151), 
+        inset 0 10px 15px rgba(0, 238, 255, 0.151);
+    }
+    #clock::before {
+        width: 8px;
+        height: 8px;
+    }
+    #clock #hour, #hr {
+        height: 80px;
+        width: 80px;
+    }
+    #clock #minute, #min {
+        height: 90px;
+        width: 90px;
+    }
+    #clock #second, #sec {
+        height: 110px;
+        width: 120px;
+    }
+    #hr:before {
+        width: 4px;
+        height: 45px;
+        border-radius: 8px 8px 0 0;
+    }
+    #min:before {
+        width: 4px;
+        height: 42px;
+        border-radius: 8px 8px 0 0;
+    }
+    #sec:before {
+        width: 4px;
+        height: 70px;
+        border-radius: 10px 10px 0 0;
+    }
+    #clock:after {
+        margin-top: 58px;
+        font-size: 10px;
     }
 }
