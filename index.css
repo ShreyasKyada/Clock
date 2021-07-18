@@ -100,8 +100,8 @@ body {
 
 @media only screen and (max-width:500px) {
     #clock {
-        height: 160px;
-        width: 160px;
+        height: 200px;
+        width: 200px;
         box-shadow: 0 -2px 20px rgb(0, 238, 255), 
         0 2px 20px rgb(0, 238, 255),
         inset 0 -5px 15px rgba(0, 238, 255, 0.151), 
